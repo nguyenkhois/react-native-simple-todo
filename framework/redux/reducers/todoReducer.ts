@@ -1,4 +1,4 @@
-import { ADD_TASK, CHECKED, REMOVE_TASK, REMOVE_TASK_COMPLETED } from "../../helpers/types";
+import { ADD_TASK, CHECKED, REMOVE_TASK, REMOVE_TASK_COMPLETED } from "../../constants/redux";
 
 export const todoReducer = (state, action) => {
     switch (action.type) {
