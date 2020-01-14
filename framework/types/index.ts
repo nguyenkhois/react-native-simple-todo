@@ -1,7 +1,8 @@
 type Task = {
     [id: number]: {
-        description: string;
-        isDone: boolean;
+        id: number,
+        description: string,
+        isDone: boolean
     }
 }
 
