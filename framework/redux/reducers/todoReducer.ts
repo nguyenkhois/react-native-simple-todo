@@ -1,4 +1,4 @@
-import { ADD_TASK, CHECKED, REMOVE_TASK, REMOVE_TASK_COMPLETED } from "../../constants/redux";
+import { ADD_TASK, TOGGLE_CHECK, REMOVE_TASK, REMOVE_TASK_COMPLETED } from "../../constants/redux";
 
 export const todoReducer = (state, action) => {
     switch (action.type) {
@@ -13,27 +13,21 @@ export const todoReducer = (state, action) => {
                 }
             });
 
-        case CHECKED:
-            const checkedTaskId = action.payload;
+        case TOGGLE_CHECK:
+            const toggledTaskId = action.payload;
 
-            if (state.tasks[checkedTaskId]){
-                state.tasks.taskId.isDone = true;
+            if (state.tasks[toggledTaskId]){
+                state.tasks[toggledTaskId].isDone = !state.tasks[toggledTaskId].isDone;
             }
 
             return state;
 
         case REMOVE_TASK:
-            const removedTaskId = action.payload;
-
-            if (state.tasks[removedTaskId]){
-                delete state.tasks[removedTaskId]; // Mutating method
-            }
-
+            // Do stuff
             return state;
 
         case REMOVE_TASK_COMPLETED:
             // Do stuff
-
             return state;
 
         default:

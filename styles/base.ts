@@ -8,5 +8,9 @@ export default StyleSheet.create({
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center'
+    },
+    inSameLine: {
+        flexDirection: 'row',
+        alignItems: 'center'
     }
 });
