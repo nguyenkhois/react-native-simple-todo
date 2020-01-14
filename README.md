@@ -2,6 +2,7 @@
 The simple example for understanding about:
 * React Native _(with React Hooks)_
 * Redux
+* Redux Thunk _(for async)_
 * React Navigation
 * TypeScript
 

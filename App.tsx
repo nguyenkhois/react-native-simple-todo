@@ -14,7 +14,7 @@ import { AboutScreen } from "./screens/About";
 import { todoReducer } from "./framework/redux/reducers/todoReducer";
 
 const preloadedState = {
-    name: "ToDo app",
+    name: "To-Do app",
     tasks: {}
 };
 
@@ -22,7 +22,7 @@ const preloadedState = {
 const store = createStore(
     todoReducer,
     preloadedState,
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+    composeWithDevTools(applyMiddleware(thunk))
 );
 
 const AppStackNavigator = createStackNavigator(
