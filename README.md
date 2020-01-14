@@ -1,4 +1,12 @@
 # Simple To-Do list
-Using React Native, Redux, React Navigation, TypeScript and React Dev Tools, Redux Dev Tools Extension.
+The simple example for understanding about:
+* React Native _(with React Hooks)_
+* Redux
+* React Navigation
+* TypeScript
 
-View the project on [Expo](https://expo.io/@khoi/simple-todo).
+Development tools are using:
+* React Dev Tools
+* Redux Dev Tools Extension
+
+View the project on [Expo.io](https://expo.io/@khoi/simple-todo).
