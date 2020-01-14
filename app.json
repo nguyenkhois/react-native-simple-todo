@@ -25,6 +25,6 @@
     "ios": {
       "supportsTablet": true
     },
-    "description": "Using React Native, Redux, React Navigation, TypeScript and React Dev Tools, Redux Dev Tools Extension"
+    "description": "Using React Native, Redux, Redux Thunk, React Navigation, TypeScript and React Dev Tools, Redux Dev Tools Extension."
   }
 }
