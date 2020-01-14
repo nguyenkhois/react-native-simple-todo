@@ -22,7 +22,7 @@ function TaskItem(props) {
     const task = props.taskInfo;
     const dispatch = useDispatch();
 
-    let taskIcon = task.isDone ?
+    const taskIcon = task.isDone ?
         <Feather name="check-square" size={30} color="green" /> :
         <Feather name="square" size={30} color="green" />;
 
